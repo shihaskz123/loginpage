@@ -30,6 +30,7 @@ component     -->  view
 
      1.2.1 -> event binding (eventName)='methodsName()' eg:(click)
      1.2.2 -> $event binding (eventName)='methodsName($event)' eg:change
+     1.2.3 -> data binding with template rendering variable --> #
 
 
 

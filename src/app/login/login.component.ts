@@ -10,6 +10,9 @@ export class LoginComponent implements OnInit {
   data="Your Perfect Banking Partner"
 
   placeHolderData="Enter Acno"
+  
+  uname:any
+  psw:any
 
   constructor() {
     
@@ -19,8 +22,12 @@ export class LoginComponent implements OnInit {
     
   }
 
-  login(){
-    alert("login clicked")
+  login(a:any,b:any){
+    this.uname=a.value
+    this.psw=b.value
+    console.log(this.uname,this.psw);
+    
+    // alert("login clicked")
   }
 
   unameChange(event:any){
