@@ -1,13 +1,13 @@
 
 <h3 class="text-center text-info mt-5">{{data}}</h3>
-<div class="container w-50 mt-5 border bg-warning-subtle shadow ">
-    <input #uname type="text" [placeholder]="placeHolderData" class="form-control mt-5">
-    <input #psw type="password" placeholder="Enter password" class="form-control mt-4">
+<div class=" ms-5 w-50 mt-5 border bg-primary shadow ">
+    <input [(ngModel)]="uname" type="text" [placeholder]="placeHolderData" name="uname" id="a1" class="form-control mt-5">
+    <input [(ngModel)]="psw" type="password" placeholder="Enter password" class="form-control mt-4">
     <div class="text-center mt-3 mb-3">
-        <button (click)="login(uname,psw)" type="button" class="bg-info-subtle btn btn-outline-info">
+        <button (click)="login()" type="button" class="bg-info-subtle btn btn-outline-info">
             login
         </button><br>
-        don't have account?<a href="" class="text-dark fw-medium">Create Password</a>
+        <p>don't have account?<a href="" class="text-dark fw-medium">Create Password</a></p>
     </div>
 
 </div>
